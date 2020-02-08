@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
     title = 'leviathanbadger-io';
     currentYear = new Date().getFullYear();
+    condition: boolean = false;
 }

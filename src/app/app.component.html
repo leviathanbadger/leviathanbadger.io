@@ -3,6 +3,15 @@
 </header>
 
 <main>
+    <label>
+        <input type="checkbox" [(ngModel)]="condition" />
+        Condition
+    </label>
+
+    <div *blsDelayLoadUntil="condition">
+        Hey, the condition was met!
+    </div>
+
     <router-outlet></router-outlet>
 </main>
 
